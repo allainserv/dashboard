@@ -1,0 +1,12 @@
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\App.Web.UI\bin\App.Web.UI.dll.config
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\App.Web.UI\bin\App.Web.UI.dll
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\App.Web.UI\bin\App.Web.UI.pdb
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\App.Web.UI\obj\Debug\App.Web.UI.csprojResolveAssemblyReference.cache
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\App.Web.UI\obj\Debug\App.Web.UI.dll
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\App.Web.UI\obj\Debug\App.Web.UI.pdb
+D:\DOT NET\Angular Code\Dashboard2\App.Web.UI\bin\App.Web.UI.dll.config
+D:\DOT NET\Angular Code\Dashboard2\App.Web.UI\bin\App.Web.UI.dll
+D:\DOT NET\Angular Code\Dashboard2\App.Web.UI\bin\App.Web.UI.pdb
+D:\DOT NET\Angular Code\Dashboard2\App.Web.UI\obj\Debug\App.Web.UI.csprojResolveAssemblyReference.cache
+D:\DOT NET\Angular Code\Dashboard2\App.Web.UI\obj\Debug\App.Web.UI.dll
+D:\DOT NET\Angular Code\Dashboard2\App.Web.UI\obj\Debug\App.Web.UI.pdb

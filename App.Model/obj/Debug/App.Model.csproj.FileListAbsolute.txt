@@ -1,0 +1,9 @@
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\App.Model\bin\Debug\App.Model.dll.config
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\App.Model\bin\Debug\App.Model.dll
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\App.Model\bin\Debug\App.Model.pdb
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\App.Model\bin\Debug\EntityFramework.dll
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\App.Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\App.Model\bin\Debug\EntityFramework.xml
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\App.Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\App.Model\obj\Debug\App.Model.dll
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\App.Model\obj\Debug\App.Model.pdb

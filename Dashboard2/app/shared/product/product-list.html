@@ -1,0 +1,44 @@
+﻿<strong class="has-error alert">{{prodCtrl.errorMessage}}</strong>
+
+<div class="row">
+    <div class="col-xs-4">
+         <input ng-model="q" id="search" class="form-control" placeholder="Enter search">
+    </div>
+    <div class="col-xs-2">
+        <input type="number" min="1" max="100" class="form-control" ng-model="pageSize" placeholder="Row per page">
+    </div>
+    <div class="col-xs-4">
+      
+        <button type="button" class="btn btn-success" ng-click="prodCtrl.toggleadd()">Add New</button>
+    </div>
+</div>
+<br />
+<br />
+
+<table class="table table-condensed table-bordered table-hover" style="font-size:smaller;">
+    <tr>
+        <th>ID</th>
+        <th>Product</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Unit Measure</th>
+        <th>Category</th>
+        <th>Location</th>
+        <th>Actions</th>
+    </tr>
+    <tr ng-repeat="prod in prodCtrl.Products | orderBy: 'Name'">
+        <td>{{prod.ID}}</td>
+        <td>{{prod.Name}}</td>
+        <td>{{prod.Description}}</td>
+        <td>{{prod.Price}}</td>
+        <td>{{prod.Quantity}}</td>
+        <td>{{prod.UnitMeasure}}</td>
+        <td>{{prod.Category}}</td>
+        <td>{{prod.Location}}</td>
+        <td>
+            <p><a ng-click="prodCtrl.toggleeditForm(prod)" href="javascript:;" class="btn btn-xs btn-primary">Edit</a> <a ng-click="prodCtrl.deletefriend(friend)" href="javascript:;" class="btn btn-xs btn-danger">Delete</a></p>
+        </td>
+    </tr>
+
+</table>

@@ -1,0 +1,53 @@
+﻿<div class="row">
+    <div class="col-lg-8">
+        <ol class="breadcrumb">
+            <li>
+                <a ui-sref="masterfile/category"><i class="fa fa-bar-chart"></i> Category</a>
+            </li>
+            <li class="active">
+                <i class="fa fa-file"></i> Add New
+            </li>
+        </ol>
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="col-md-8">
+
+        <div class="panel panel-success">
+            <div class="panel-heading"><i class="fa fa-bar-chart"></i> New Category</div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-8">
+                        <form name="categoryForm" class="form-horizontal" novalidate>
+                            <div class="form-group">
+                                <label for="categname" class="col-sm-3 control-label">Name</label>
+                                <div class="col-sm-7">
+                                    <input type="text" class="form-control" data-ng-model="vm.category.Name" placeholder="enter category name" required />
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                 <div class="col-md-5 col-md-offset-3 col-sm-3 col-sm-offset-3 ">
+                                    <button id="cancelSave" name="cancelSave" class="btn btn-warning"
+                                            ui-sref="masterfile/category">
+                                        <i class="fa fa-close"></i> Cancel
+                                    </button>
+                                    <button id="submitButton" name="submitButton" class="btn btn-primary"
+                                            ng-click="vm.save()" ng-disabled="!categoryForm.$valid">
+                                        <i class="fa fa-save"></i> Save
+                                    </button>
+
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+

@@ -1,0 +1,10 @@
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\App.Model\bin\Debug\App.Models.dll.config
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\App.Model\bin\Debug\App.Models.dll
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\App.Model\bin\Debug\App.Models.pdb
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\App.Model\bin\Debug\EntityFramework.dll
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\App.Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\App.Model\bin\Debug\EntityFramework.xml
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\App.Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\App.Model\obj\Debug\App.Models.dll
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\App.Model\obj\Debug\App.Models.pdb
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\App.Model\obj\Debug\App.Models.csprojResolveAssemblyReference.cache

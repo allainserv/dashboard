@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Inventory_Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="category">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="category_name" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="products" Relationship="Inventory_Model.FK_product_category" FromRole="category" ToRole="product" />
+  </EntityType>
+  <EntityType Name="location">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="location_name" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="products" Relationship="Inventory_Model.FK_product_location" FromRole="location" ToRole="product" />
+  </EntityType>
+  <EntityType Name="product">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="description" Type="String" MaxLength="550" FixedLength="false" Unicode="true" />
+    <Property Name="price" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="quantity" Type="Int32" />
+    <Property Name="unit_measure" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="category_id" Type="Int32" />
+    <Property Name="location_id" Type="Int32" />
+    <Property Name="created_date" Type="DateTime" Precision="0" />
+    <Property Name="currency" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="img_url" Type="String" MaxLength="650" FixedLength="false" Unicode="true" />
+    <Property Name="is_active" Type="Boolean" />
+    <NavigationProperty Name="category" Relationship="Inventory_Model.FK_product_category" FromRole="product" ToRole="category" />
+    <NavigationProperty Name="location" Relationship="Inventory_Model.FK_product_location" FromRole="product" ToRole="location" />
+    <NavigationProperty Name="sales" Relationship="Inventory_Model.FK_sales_product" FromRole="product" ToRole="sale" />
+  </EntityType>
+  <EntityType Name="sale">
+    <Key>
+      <PropertyRef Name="sales_id" />
+    </Key>
+    <Property Name="sales_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="product_id" Type="Int32" />
+    <Property Name="price" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="trans_date" Type="DateTime" Precision="3" />
+    <Property Name="created_date" Type="DateTime" Precision="3" />
+    <Property Name="user_id" Type="Int32" />
+    <NavigationProperty Name="product" Relationship="Inventory_Model.FK_sales_product" FromRole="sale" ToRole="product" />
+  </EntityType>
+  <EntityType Name="user">
+    <Key>
+      <PropertyRef Name="user_id" />
+    </Key>
+    <Property Name="user_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="fname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="lastname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="user_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="email" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="is_active" Type="Boolean" />
+  </EntityType>
+  <EntityContainer Name="App_DBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="categories" EntityType="Self.category" />
+    <EntitySet Name="locations" EntityType="Self.location" />
+    <EntitySet Name="products" EntityType="Self.product" />
+    <EntitySet Name="sales" EntityType="Self.sale" />
+    <EntitySet Name="users" EntityType="Self.user" />
+    <AssociationSet Name="FK_product_category" Association="Inventory_Model.FK_product_category">
+      <End Role="category" EntitySet="categories" />
+      <End Role="product" EntitySet="products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_product_location" Association="Inventory_Model.FK_product_location">
+      <End Role="location" EntitySet="locations" />
+      <End Role="product" EntitySet="products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_sales_product" Association="Inventory_Model.FK_sales_product">
+      <End Role="product" EntitySet="products" />
+      <End Role="sale" EntitySet="sales" />
+    </AssociationSet>
+  </EntityContainer>
+  <Association Name="FK_product_category">
+    <End Type="Inventory_Model.category" Role="category" Multiplicity="0..1" />
+    <End Type="Inventory_Model.product" Role="product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="category">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="product">
+        <PropertyRef Name="category_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_product_location">
+    <End Type="Inventory_Model.location" Role="location" Multiplicity="0..1" />
+    <End Type="Inventory_Model.product" Role="product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="location">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="product">
+        <PropertyRef Name="location_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_sales_product">
+    <End Type="Inventory_Model.product" Role="product" Multiplicity="0..1" />
+    <End Type="Inventory_Model.sale" Role="sale" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="product">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="sale">
+        <PropertyRef Name="product_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

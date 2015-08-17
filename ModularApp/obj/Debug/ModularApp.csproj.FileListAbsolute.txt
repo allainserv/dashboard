@@ -1,0 +1,6 @@
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\ModularApp\bin\ModularApp.dll.config
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\ModularApp\bin\ModularApp.dll
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\ModularApp\bin\ModularApp.pdb
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\ModularApp\obj\Debug\ModularApp.csprojResolveAssemblyReference.cache
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\ModularApp\obj\Debug\ModularApp.dll
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\ModularApp\obj\Debug\ModularApp.pdb

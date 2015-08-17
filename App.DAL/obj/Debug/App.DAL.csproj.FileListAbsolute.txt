@@ -1,0 +1,16 @@
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\App.DAL\bin\Debug\App.DAL.dll
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\App.DAL\bin\Debug\App.DAL.pdb
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\App.DAL\obj\Debug\App.DAL.csprojResolveAssemblyReference.cache
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\App.DAL\obj\Debug\App.DAL.dll
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\App.DAL\obj\Debug\App.DAL.pdb
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\App.DAL\bin\Debug\EntityFramework.dll
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\App.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\App.DAL\bin\Debug\EntityFramework.xml
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\App.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\App.DAL\bin\Debug\App.DAL.dll.config
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\App.DAL\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\App.DAL\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\App.DAL\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\App.DAL\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\App.DAL\bin\Debug\App.Models.dll
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\App.DAL\bin\Debug\App.Models.pdb

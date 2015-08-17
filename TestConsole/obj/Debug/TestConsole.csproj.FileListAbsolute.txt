@@ -1,0 +1,14 @@
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\TestConsole\bin\Debug\TestConsole.exe.config
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\TestConsole\bin\Debug\TestConsole.exe
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\TestConsole\bin\Debug\TestConsole.pdb
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\TestConsole\bin\Debug\App.DAL.dll
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\TestConsole\bin\Debug\EntityFramework.dll
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\TestConsole\bin\Debug\App.DAL.pdb
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\TestConsole\bin\Debug\EntityFramework.xml
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\TestConsole\obj\Debug\TestConsole.csprojResolveAssemblyReference.cache
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\TestConsole\obj\Debug\TestConsole.exe
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\TestConsole\obj\Debug\TestConsole.pdb
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\TestConsole\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\TestConsole\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\TestConsole\bin\Debug\App.Models.dll
+C:\Users\ALLAIN\documents\visual studio 2013\Projects\Dashboard2\TestConsole\bin\Debug\App.Models.pdb

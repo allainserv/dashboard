@@ -1,0 +1,75 @@
+﻿<div class="container-fluid fixed-height">
+    <div class="row">
+        <div class="col-lg-8">
+            <h1>
+                <i class="fa fa-bar-chart"></i>  Category 
+            </h1>
+            <hr />
+
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-8">
+            <div class="col-md-6">
+                <a class="btn btn-success" ui-sref="masterfile/category/add-new"><i class="fa fa-file"></i> New</a>
+            </div>
+
+            <div class="col-xs-10 col-lg-6 col-md-6">
+                <div class="input-group">
+                    <input type="text" id="searchText" class="form-control pull-right" placeholder="Search for..." ng-model="q">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">
+                            <i class="text-muted fa fa-search"></i>
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8">
+            <div class="table table-responsive">
+                <br />
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><i class="fa fa-calendar fa-fw"></i> Category</h3>
+                    </div>
+                    <div class="panel-body">
+                        <table class="table table-condensed table-striped table-hover" style="font-size:smaller;">
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Category name</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="cat in vm.categories">
+                                    <td>{{cat.Id}}</td>
+                                    <td>{{cat.Name}}</td>
+                                    <td>
+                                        <p>
+                                            <a class="btn btn-primary" ui-sref="masterfile/category/edit({catId: cat.Id})">
+                                                <i class="fa fa-edit"></i>
+                                            </a>
+                                            <a ng-click="vm.deletecategory(cat)" href="javascript:;" class="btn btn-danger">
+                                                <i class="fa fa-trash"></i>
+                                            </a>
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!--<div class="text-center">
+            <dir-pagination-controls boundary-links="true" pagination-id="prodPagination" template-url="\app\pagination\dirPagination.tpl.html"></dir-pagination-controls>
+        </div>-->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+       
+    </div>
+</div>

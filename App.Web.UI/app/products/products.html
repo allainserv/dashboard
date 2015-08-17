@@ -1,0 +1,82 @@
+﻿<div class="container-fluid fixed-height">
+    <div class="row">
+        <div class="col-lg-8">
+            <h1>
+                <i class="fa fa-bar-chart"></i>  Products <small> Overview</small>
+            </h1>
+            <hr />
+            
+        </div>
+        
+    </div>
+
+    <div class="row">
+       <div class="col-md-6">
+            <a class="btn btn-success" ui-sref="product/add"><i class="fa fa-file"></i> New</a>
+        </div>
+      
+        <div class="col-xs-10 col-lg-6 col-md-6">
+            <div class="input-group">
+                <input type="text" id="searchText" class="form-control pull-right" placeholder="Search for..." ng-model="q">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">
+                        <i class="text-muted fa fa-search"></i>
+                    </button>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="table table-responsive" >
+        <br />
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i> Products</h3>
+            </div>
+            <div class="panel-body">
+                <table class="table table-condensed table-striped table-hover" style="font-size:smaller;">
+                    <thead>
+                        <tr>
+                           <th colspan="2">Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Unit Measure</th>
+                            <th>Category</th>
+                            <th>Location</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      
+                        <tr dir-paginate="prod in vm.products | filter:q | orderBy: 'Name' | itemsPerPage: vm.pageSize" current-page="vm.currentPage" pagination-id="prodPagination">
+                            
+                            <td width="50"><img ng-src="{{prod.ImgUrl || vm.defaultImage}}" width="50" height="40" />
+                            </td>
+                            <td>{{prod.Name}}</td>
+                            <td>{{prod.Price}}</td>
+                            <td>{{prod.Quantity}}</td>
+                            <td>{{prod.UnitMeasure}}</td>
+                            <td>{{prod.Category}}</td>
+                            <td>{{prod.Location}}</td>
+                            <td>
+                                <p>
+                                    <a class="btn btn-primary" ui-sref="product/edit({prodId: prod.Id})">
+                                        <i class="fa fa-edit"></i>
+                                    </a>
+                                    <a ng-click="vm.deleteProduct(prod)" href="javascript:;" class="btn btn-danger">
+                                        <i class="fa fa-trash"></i>
+                                    </a>
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="text-center">
+                    <dir-pagination-controls boundary-links="true" pagination-id="prodPagination"  template-url="\app\pagination\dirPagination.tpl.html"></dir-pagination-controls>
+                </div>
+            </div>
+        </div>
+      
+    </div>
+
+</div>
